@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+    color: #495f71;
+    background-image: linear-gradient(0deg, hsl(207deg 90% 54% / 13%) 50% , #2c2e31 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.container {
+
+background-color: whitesmoke;
+padding: 20px;
+width: 730px;
+max-width: 100%;
+border-radius: 7px;
+background-image: linear-gradient(0deg, whitesmoke 73% , hsl(207deg 90% 54% / 13%) 50%);
+
+
+}
+
+.image {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 150px;
+    height: 150px;
+    margin-left:270px;
+    font-size: 1px;
+}
+
+.img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+.img::before {
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: -0.25rem;
+right: -0.5rem;
+border-radius: 50%;
+}
+
+ .img::after {
+display: grid;
+place-items: center;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+
+} 
+
+
+.h {
+    transform: translateY(-60px);
+
+}
+
+.icons {
+letter-spacing: 30px;
+font-size: 30px;
+width: 100%;
+ cursor: pointer;
+margin-bottom: 15px;
+overflow: hidden;
+white-space: nowrap;
+padding-left: 100px;  
+user-select: none;
+
+}
+
+.icon-user:hover {
+    color: #03a9f4;
+    transition: 0.3s ease;
+}
+
+.icon-envelope-open:hover {
+    color: #03a9f4;
+    transition: 0.3s ease;
+}
+
+.icon-calendar-times-o:hover {
+    color: #03a9f4;
+    transition: 0.3s ease;
+}
+
+.icon-map-o:hover {
+    color: #03a9f4;
+    transition: 0.3s ease;
+}
+
+.icon-phone:hover {
+    color: #03a9f4;
+    transition: 0.3s ease;
+}
+
+.icon-lock:hover {
+    color: #03a9f4;
+    transition: 0.3s ease;
+}
+
+#text {
+text-align: center;
+margin-top: 50px;
+
+}
+
+#result {
+
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+h2 {
+
+font-size: 50px;
+margin-top: 10px;
+color: #041727;
+
+}
+
+.Btn {
+
+    width: 175px;
+    border-radius: 7px;
+    border: none;
+    background-color: #03a9f4;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-80px, 10px);
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+.Btn:hover {
+
+    background-color: #023b54;
+    color: #03a9f4;
+   
+  
+
+}
